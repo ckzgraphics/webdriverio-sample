@@ -16,7 +16,7 @@ describe('webdriver_io_page', () => {
 });
 
 
-describe('webdriver_io_page', () => {
+describe('New_Facebook_Test', () => {
     
     it('Open Facebook', () => {
         browser.url('https://www.facebook.com');
