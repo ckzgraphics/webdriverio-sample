@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-describe('New_Facebook_Test', () => {
+describe('WebDriverIO.Sepcs New', () => {
     
     it('Open Twitter', () => {
         browser.url('https://www.twitter.com');
