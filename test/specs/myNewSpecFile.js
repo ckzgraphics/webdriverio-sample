@@ -1,15 +1,17 @@
-const assert = require('assert');
+const assert = require("assert");
 
-describe('WebDriverIO.Sepcs New', () => {
-    
-    it('Open Twitter', () => {
-        browser.url('https://www.twitter.com');
-        assert.equal('Hello', 'Hello');
-    });
-    
-   it('Open Facebook', () => {
-        browser.url('https://www.facebook.com');
-        assert.equal('Hello', 'Hello');
-    });
-    
+describe("DESC My New Spec", function() {
+  it("Open Google", function() {
+    browser.url("https://www.google.com");
+  });
+
+  it("Open Yahoo", function() {
+    browser.url("https://www.yahoo.com");
+  });
+});
+
+describe("DESC Facebook", function() {
+  it("Open Google", function() {
+    browser.url("https://www.facebook.com");
+  });
 });
