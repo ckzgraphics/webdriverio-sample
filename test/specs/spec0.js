@@ -1,11 +1,7 @@
 const assert = require("assert");
 
-describe("DESC Spec 0", function() {
+describe("DESC Google", function() {
   it("Open Insta", function() {
-    browser.url("https://www.insta.com");
-  });
-
-  it("Open BStacj", function() {
-    browser.url("https://www.browserstack.com");
+    browser.url("https://www.google.com");
   });
 });
