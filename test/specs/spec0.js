@@ -8,3 +8,12 @@ describe('New.Facebook Test', () => {
     });
     
 });
+
+describe('New.BrowserStack Test', () => {
+    
+    it('Open BrowserStack', () => {
+        browser.url('https://www.browserstack.com');
+        assert.equal('Hello', 'Hello');
+    });
+    
+});
