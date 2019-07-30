@@ -7,4 +7,9 @@ describe('WebDriverIO.Sepcs New', () => {
         assert.equal('Hello', 'Hello');
     });
     
+   it('Open Facebook', () => {
+        browser.url('https://www.facebook.com');
+        assert.equal('Hello', 'Hello');
+    });
+    
 });
