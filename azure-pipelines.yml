@@ -22,7 +22,6 @@ steps:
     BrowserStackServiceEndPoint: 'BrowserStack Connection'
     
 - script: npm install
-- script: npm list | grep webdriver
 - script: npm test
   displayName: 'Run a one-line script'
 - task: BrowserStackResults@0
