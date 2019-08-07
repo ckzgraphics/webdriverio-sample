@@ -6,7 +6,7 @@
 trigger:
   branches:
     include:
-    - releases/*
+    - releases/wdio5
 
 variables:
   user: $(BROWSERSTACK_USERNAME)
