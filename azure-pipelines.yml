@@ -22,6 +22,7 @@ steps:
     BrowserStackServiceEndPoint: 'BrowserStack Connection'
     
 - script: npm install
+- script: npm list | grep webdriverio
 - script: npm test
   displayName: 'Run a one-line script'
 - task: BrowserStackResults@0
