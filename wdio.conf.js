@@ -19,7 +19,7 @@ exports.config = {
     // backend you should define the host address, port, and path here.
     //
     hostname: 'hub.browserstack.com',
-    port: 443,
+    port: 80,
     path: '/wd/hub',
     //
     // =================
