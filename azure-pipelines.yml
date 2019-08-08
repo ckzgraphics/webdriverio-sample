@@ -9,7 +9,7 @@ trigger:
     - releases/wdio5
 
 variables:
-  user: $(BROWSERSTACK_USERNAME)
+  user: $(BROWSERSTACK_USER)
   key: $(BROWSERSTACK_ACCESS_KEY)
 
 steps:
