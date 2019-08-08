@@ -9,7 +9,7 @@ trigger:
     - releases/wdio5
 
 variables:
-  user: $(BROWSERSTACK_USER)
+  user: $(BROWSERSTACK_USERNAME)
   key: $(BROWSERSTACK_ACCESS_KEY)
 
 steps:
@@ -20,7 +20,7 @@ steps:
 - task: BrowserStackConfig@0
   inputs:
     BrowserStackServiceEndPoint: 'BrowserStack Connection'
-    
+
 - script: npm install
 - script: npm list | grep webdriverio
 - script: npm test
