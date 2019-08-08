@@ -15,7 +15,7 @@ variables:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '8.16.0'
+    versionSpec: '10.16.0'
     checkLatest: false
 - task: BrowserStackConfig@0
   inputs:
