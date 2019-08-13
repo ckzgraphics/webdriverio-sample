@@ -19,8 +19,7 @@ steps:
     checkLatest: false
 - task: BrowserStackConfig@0
   inputs:
-    BrowserStackServiceEndPoint: 'BrowserStack Connection'
-
+    BrowserStackServiceEndPoint: 'Bstack'
 - script: npm install
 - script: npm list | grep webdriverio
 - script: npm test
