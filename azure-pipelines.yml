@@ -17,14 +17,14 @@ steps:
   inputs:
     versionSpec: '10.16.0'
     checkLatest: false
-- task: BrowserStackConfig@0
+- task: BrowserStackConfig@1
   inputs:
-    BrowserStackServiceEndPoint: 'Bstack'
+    BrowserStackServiceEndPoint: 'BStack'
 - script: npm install
 - script: npm list | grep webdriverio
 - script: npm test
   displayName: 'Run a one-line script'
-- task: BrowserStackResults@0
+- task: BrowserStackResults@1
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
