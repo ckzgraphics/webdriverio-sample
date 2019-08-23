@@ -13,6 +13,10 @@ variables:
   key: $(BROWSERSTACK_ACCESS_KEY)
 
 steps:
+
+- task: BrowserStackConfig@0
+  inputs:
+    BrowserStackServiceEndPoint: 'Browserstack Connection'
 - task: NodeTool@0
   inputs:
     versionSpec: '10.16.0'
@@ -22,7 +26,7 @@ steps:
 - script: npm list | grep webdriverio
 - script: npm test
   displayName: 'Run a one-line script'
-
+- task: BrowserStackResults@0
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
