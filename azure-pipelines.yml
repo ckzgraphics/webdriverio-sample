@@ -19,15 +19,15 @@ steps:
     versionSpec: '10.16.0'
     checkLatest: false
 
-- task: BrowserStackConfig@1
+- task: BrowserStackConfig@0
   inputs:
     BrowserStackServiceEndPoint: 'BStack'
 - script: npm install
 - script: npm list | grep webdriverio
 - script: npm test
   displayName: 'Run a one-line script'
-- task: BrowserStackResults@1
 
+- task: BrowserStackResults@0
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
